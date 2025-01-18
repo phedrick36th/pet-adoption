@@ -1,0 +1,258 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans 3", serif;
+}
+
+.top-section-wrapper {
+  background-color: #001d37;
+  padding: 0 16px;
+  overflow: hidden;
+}
+.top-section {
+  color: #ffffff;
+  padding: 100px 0;
+  max-width: 1066px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.actual-top-content {
+  position: relative;
+  z-index: 2;
+}
+
+.top-section h1 {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 97.3%;
+  max-width: 525px;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  line-height: 169.3%;
+  margin: 1rem 0;
+  max-width: 435px;
+}
+
+.intro-buttons {
+  margin-bottom: 70px;
+}
+
+.our-btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.125rem;
+  background-color: #475aff;
+  border: 2px solid #475aff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 13px 25px;
+  border-radius: 1000px;
+  transition: background 0.5s ease-out, border 0.5s ease-in;
+}
+
+.our-btn:hover {
+  background-color: #2e40e2;
+  border: 2px solid #2e40e2;
+}
+
+.our-btn--outline {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.our-btn--outline:hover {
+  background-color: #fff;
+  color: #475aff;
+}
+
+.utility-mr {
+  margin-right: 16px;
+}
+
+.intro-features {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.intro-feature {
+  padding: 33px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.intro-feature p {
+  margin: 0;
+  font-size: 1.0625rem;
+}
+
+.intro-feature h2 {
+  font-size: 1.5rem;
+  margin: 31px 0 3px 0;
+}
+
+.circle {
+  width: 617px;
+  height: 617px;
+  background-color: #d660ff;
+  opacity: 0.85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: 62px;
+  right: -390px;
+}
+
+.circle-2 {
+  width: 617px;
+  height: 617px;
+  background-color: #6079ff;
+  opacity: 0.85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: -365px;
+  left: -123px;
+}
+
+.page-section {
+  background-color: #ffffff;
+  padding: 70px 16px;
+}
+
+.page-section-inner {
+  max-width: 1066px;
+  margin: 0 auto;
+}
+
+.page-section-title {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.pet-filter {
+  color: #9f9f9f;
+  font-size: 1.15rem;
+}
+
+.pet-filter button {
+  background-color: transparent;
+  border: none;
+  font-family: "Source Sans 3", serif;
+  font-size: 1.15rem;
+  color: #9f9f9f;
+}
+
+.site-footer {
+  text-align: center;
+  color: #a6a6a6;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0 0 65px 0;
+}
+
+.list-of-pets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  gap: 16px;
+}
+
+.pet-card {
+  display: grid;
+  grid-template-columns: 165px 1fr;
+  border-radius: 20px;
+  border: 1px solid #f3f3f3;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.pet-card-photo {
+  order: 1;
+  grid-row: 1;
+}
+
+.pet-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pet-card-text {
+  padding: 18px 16px;
+}
+
+.pet-card-text h3 {
+  font-size: 1.625rem;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.pet-description {
+  margin: 0 0 1rem 0;
+  color: #626262;
+  line-height: 150%;
+}
+
+.pet-age {
+  color: #a2a2a2;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .intro-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .top-section h1 {
+    font-size: 6.25rem;
+  }
+  .top-section {
+    padding: 139px 0;
+  }
+  .intro-buttons {
+    margin-bottom: 129px;
+  }
+  .intro-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  /* .list-of-pets {
+    grid-template-columns: 1fr 1fr;
+  } */
+  .page-section {
+    padding: 130px 16px;
+  }
+  .page-section-title {
+    font-size: 5.31rem;
+  }
+  .pet-filter {
+    font-size: 1.375rem;
+  }
+
+  .pet-filter button {
+    font-size: 1.375rem;
+  }
+  .pet-card-text {
+    padding: 21px 29px;
+  }
+}
