@@ -58,3 +58,22 @@ function createAgeText(birthYear) {
 }
 
 /* ====== Pets Select Section Ends ======= */
+
+/* ====== Pets filter Section Starts ======= */
+const allButtons = document.querySelectorAll(".pet-filter button");
+
+allButtons.forEach((el) => {
+  el.addEventListener("click", handleButtonClick);
+});
+
+function handleButtonClick(event) {
+  //remove active class from any and all buttons
+  allButtons.forEach((el) => el.classList.remove("active"));
+
+  // add active class to the specific button that just got clicked
+  event.target.classList.add("active");
+
+  // actually filter the pet down below
+}
+
+/* ====== Pets filter Section ends ======= */
